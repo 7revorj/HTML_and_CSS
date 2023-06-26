@@ -1,0 +1,26 @@
+body {
+color: white;  
+Background-color: #000000;
+background-image: url('/Users/endersion/Documents/GitHub/HTML_and_CSS/Armored Core VI Fires of Rubicon/background.avif');
+  background-size: cover; /* Adjust the background size to cover the entire body */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+Nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #000000;
+}
+
+.resized-image {
+	width: 300px; /* Replace with the desired width */
+	height: auto; /* Maintain aspect ratio by setting height to 'auto' */
+	position: fixed;
+	bottom: 0;
+	right: 0; 
+}
+
+  
+  

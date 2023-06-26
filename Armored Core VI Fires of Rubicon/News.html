@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+News from the Rubicon
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+  </head>
+<body>
+<div id="player"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+            <script>
+              function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('player', {
+                  videoId: 'nUTPLucLU5I',
+                  width: 560,
+                  height: 315,
+                  playerVars: {
+                    rel: 0,
+                    autoplay: 0,
+                  },
+                  events: {
+                    onReady: onPlayerReady
+                  }
+                });
+              }
+          
+              function onPlayerReady(event) {
+                event.target.playVideo();
+              }
+            </script>
+
+</body>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<footer>
+  <img src="/Users/endersion/Documents/GitHub/HTML_and_CSS/Armored Core VI Fires of Rubicon/acvifor-preorders-announcement-thumbnail.jpg" alt="Image" class="resized-image">
+
+    <nav>
+        <a href="Index.html">HOME</a>
+        <a href="News.html">NEWS</a>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8">
+	<nav>
+			<a href="Assignment.html">HOME</a> |
+			<a href="Dog.html">DOG PHOTO</a> |
+			<a href="Dog_video.html">DOG VIDEO</a> |
+	</nav>
+	<script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    function onYouTubeIframeAPIReady() {
+      var player;
+      player = new YT.Player('player', {
+        videoId: 'iKD-dulaXJY',
+        width: 560,
+        height: 315,
+        playerVars: {
+          rel: 0,
+          autoplay: 0,
+        },
+        events: {
+          onReady: onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+  </script>
+	</head>
+	<body>
+	<main>
+	<p id="paragraph">When is a paragraph not a paragraph? The answer is don't worry about it.</p>
+	<h1>Look I know life is hard, but chill out and watch this dog video</h1>
+	<h2>Don't laugh too hard you sadist</h2>
+	</main>
+	<div id="player"></div>
+	<script src="https://www.youtube.com/iframe_api"></script>	
+
+<p>Look man idk why this script won't work but it's well beyond me and I'm assuming it has something to do with
+	the website not being actually hosted. Bummer. Anyway, this sufficiently completes the assignment:
+	<a href="https://youtu.be/iKD-dulaXJY">This is a dog video</a>
+</p>
+</body>
+
+
+</html>
