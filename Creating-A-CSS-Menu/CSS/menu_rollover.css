@@ -94,7 +94,7 @@ h1 {
 -----------------------------------------------------*/
 
 .container .squares:nth-child(-n+4) {
-    background-image: url("../images/icons/icons.png");
+    background-image: url("../../Images/Icons/Icons.png");
     color: white;
     float: left;
     width: 100px;
@@ -103,9 +103,6 @@ h1 {
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
-    transition-property:
-        transition-duration:;
-    transition-delay: ;
     transition: transform .5s ease-in-out;
 }
 
@@ -147,7 +144,7 @@ h1 {
  ---------------------------------------------------------- */
 
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../images/icons/icons2.png");
+    background-image: url("../../Images/icons/icons2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -179,7 +176,7 @@ h1 {
     0%,
     100% {
         transform: translateY(0px);
-        background-image: url("../images/icons/icons2.png");
+        background-image: url("../../images/icons/icons2.png");
     }
 
     50% {
