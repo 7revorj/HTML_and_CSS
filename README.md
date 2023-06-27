@@ -14,7 +14,7 @@
 
 ### Portfolio
 
-This is an unfinished version of my portfolio. It includes a background video animated with keyframes moveVideoText, navbar animated with keyframes moveNav effect, viewport adjustments & @media rule for visibility on various sized browsers, text animated to fall from top of screen with CSS, hover effects over text and images, various containers, rounded images, intermediate formatting, hover effects for input boxes and submit button, an AI generated video, links to my GitHub, a functional and formatted contact form using formspree.io.
+This is an unfinished version of my portfolio. It includes a background video & navbar animated with @keyframes moveVideoText & keyframes moveNav, viewport adjustments & @media rule for visibility on various sized browsers, text animated with CSS to fall from top of screen, hover effects over text/images/input forms/submit button, various containers, rounded images, intermediate formatting, an embedded auto-playing looping AI generated video, links to my GitHub including one image link, a functional and formatted contact form using formspree.io.
 
 ### Academy Cinemas Sample Site
 
