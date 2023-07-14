@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="JS/BM.js" defer></script>
         <title>Black Mirror Season 6 Rundown</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="CSS/Style.css">
@@ -23,92 +24,91 @@
 <!-- End Home -->
 <!-- Gallery -->
 <section id = "gallery">
-<div>
-    <div>
-        <div>
-            <p>Joan is Awful</p>
-            <img src="../Images/Black_Mirror/Joan.jpg" width="256" height="256" alt="Joan">
-            <span id="myArrow" class="arrow" onclick="toggleVisibility()"></span>
-            <div id="myContent" class="hidden">
-             <details>
-                <Summary>Episode Description (very mild spoilers)</Summary>
-                <p>An average woman is stunned to discover a global streaming platform
-                     has launched a prestige TV drama adaptation of her life — in which she is portrayed by Hollywood A-lister Salma Hayek.</p>
-             </details>
-                    </div>
-
-                    </div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+        <img src="Images/Joan copy.jpg" alt="Girl sitting" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
-</div>
-
-<div>
-    <div>
-        <div>
-            <p>Loch Henry</p>
-            <img src="../Images/Black_Mirror/LH.webp" width="256" height="256" alt="Loch Henry">
-            <span id="myArrow" class="arrow" onclick="toggleVisibility()"></span>
-            <div id="myContent" class="hidden">
-             <details>
-                <Summary>Episode Description (very mild spoilers)</Summary>
-                <p>A young couple travel to a sleepy Scottish town to start work on a genteel nature documentary – but find themselves drawn to a juicy local story involving shocking events of the past.</p>
-             </details>
-                    </div>
-
-                    </div>
+    <div class="column">
+        <img src="Images/LH copy.jpg" alt="Filmographer behind camera" onclick="openModal();currentSlide(2)" class="hover-shadow">
     </div>
-</div>
-
-<div>
-    <div>
-        <div>
-            <p>Beyond the Sea</p>
-            <img src="../Images/Black_Mirror/Bts.avif" width="256" height="256" alt="Beyond the Sea">
-            <span id="myArrow" class="arrow" onclick="toggleVisibility()"></span>
-            <div id="myContent" class="hidden">
-             <details>
-                <Summary>Episode Description (very mild spoilers)</Summary>
-                <p>In an alternative 1969, two men on a perilous high-tech mission wrestle
-                     with the consequences of an unimaginable tragedy.</p>
-             </details>
-                    </div>
-
-                    </div>
+    <div class="column">
+        <img src="Images/Bts copy.jpg" alt="Two spacemen looking at each other" onclick="openModal();currentSlide(3)" class="hover-shadow">
     </div>
-</div>
+    <div class="column">
+        <img src="Images/MazeyDay copy.jpg" alt="Girl at her computer" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="Images/BM copy.jpg" alt="girl with blurry eyes" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
     
-<div>
-    <div>
-        <div>
-            <p>Mazey Day</p>
-            <img src="../Images/Black_Mirror/MazeyDay.webp" width="256" height="256" alt="Mazey Day">
-            <span id="myArrow" class="arrow" onclick="toggleVisibility()"></span>
-            <div id="myContent" class="hidden">
-             <details>
-                <Summary>Episode Description (very mild spoilers)</Summary>
-                <p>A troubled starlet is dogged by invasive paparazzi while dealing with the consequences of a hit-and-run incident.</p>
-             </details>
-                    </div>
+</div>
+ 
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
 
-                    </div>
+        <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="Images/Joan.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="Images/LH.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="Images/bts.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="Images/MazeyDay.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="Images/BM.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <img class="demo" src="Images/Joan copy.jpg" onclick="currentSlide(1)" alt="Joan is Awful">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="Images/LH copy.jpg" onclick="currentSlide(2)" alt="Loch Hadon">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="Images/Bts copy.jpg" onclick="currentSlide(3)" alt="Beyond The Sea">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="Images/MazeyDay copy.jpg" onclick="currentSlide(4)" alt="Mazey Day">
+        </div>
+
+        <div class="column">
+        <img class="demo" src="Images/BM copy.jpg" onclick="currentSlide(4)" alt="Demon79">
+        </div>
     </div>
 </div>
 
-<div>
-    <div>
-        <div>
-            <p>Demon 79</p>
-            <img src="../Images/Black_Mirror/BM.webp" width="256" height="256" alt="Demon79">
-            <span id="myArrow" class="arrow" onclick="toggleVisibility()"></span>
-            <div id="myContent" class="hidden">
-             <details>
-                <Summary>Episode Description (very mild spoilers)</Summary>
-                <p>A hacker infiltrates a virtual reality game and unleashes a deadly virus that threatens to wipe out humanity.</p>
-             </details>
-                    </div>
 
-                    </div>
-    </div>
-</div>
+
+  
 
 </section>
 <!-- End Gallery -->
