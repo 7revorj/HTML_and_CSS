@@ -122,7 +122,18 @@
         </div>
     </div>
 </div>
-
+<!-- jumbotron heading -->
+<div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+    <div class="container">
+        <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+            Movie Deals</h1>
+            <p class="lead">Check out our monthly deals...</p>
+            <!--movie deals-->
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+            <!-- /movie deals -->
+    </div>
+</div>
+<!-- /jumbotron heading -->
 
 
 
@@ -133,11 +144,53 @@
             <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email to join our mailing list for weekly deals!">
     </div>
-<button type="submit" class="btn btn-primary">Submit</button>   
-
+<button id="signup-btn" type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top"
+    data-content="Thanks for signing up to receive great movie reward deals!">
+    Sign up!
+</button>
 </div>
 </form>
-
+<!-- Form Modal -->
+    <div class="modal fade" tabindex="-1" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <fieldset class="form-group">
+                        <label for="firstname">First Name:</label>
+                       
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                        <label for="lastname">Last Name:</label>
+                    
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                    
+                            <input type="email" class="form-control" id="email" placeholder="Email...">
+                      
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="monthly" type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top"
+    data-content="Thanks for signing up to receive great movie reward deals!">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
 
 <div class="container my-5">
     <ul class="nav nav-inline">
@@ -168,6 +221,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+
+    <script>
+           
+                    $('.popover-dismiss').popover({
+                        trigger: 'focus'
+        })
+          
+        $(document).ready(function () { //creates a conditional statement so that if text is empty signup button has different popover text
+            $("#signup-btn").click(function () {
+                var email = $("#exampleInputEmail1").val();
+                if (email === "") {
+                    $(this).attr("data-content", "Please enter your email before signing up!");
+                } else {
+                    $(this).attr("data-content", "Thanks for signing up to receive great movie reward deals!");
+                }
+                $(this).popover('show');
+            });
+        });
+           $(document).ready(function () { //creates a conditional statement so that if text is empty signup button has different popover text
+                $("#monthly").click(function () {
+                    var email = $("#firstname").val();
+                    var lastname = $("#lastname").val();
+                    var email = $("#email").val();
+                     if (firstname === "" || lastname === "" || email === "") {
+                        $(this).attr("data-content", "Please fully complete the form to sign up!");
+                    } else {
+                        $(this).attr("data-content", "Thanks for signing up to receive great movie reward deals!");
+                    }
+                    $(this).popover('show');
+                });
+            });
+    </script>
 </body>
 
 </html>
