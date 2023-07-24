@@ -417,11 +417,7 @@ button:hover,
 
 /***** End of Contact Form Styling *****/
 
-.video {
-margin-left: auto;
-    width: 50vw;
-    height: 50vw;
-}
+
 
 @keyframes zoominoutsinglefeatured {
     0% {
@@ -437,6 +433,15 @@ margin-left: auto;
     }
 }
 
+.video-container {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw
+        /* adjust as needed */
+}
+
 .video {
+
     animation: zoominoutsinglefeatured 15s forwards;
 }
